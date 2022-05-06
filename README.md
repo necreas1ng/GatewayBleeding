@@ -37,6 +37,8 @@ options:
 ```
 
 ```
+python3 HSRPWNv2.py --help
+
 MMMMMMMMMMMМ МММММММММMM MMMMMMMMMMMМ MMMMMMMMMMMМ MMMMMMMMMMMМММ MММММММММММ 
 M  MMMMM  MM M  mmmmm..M MM  mmmm,  M MM  mmmmm  M M  MMM  MMM  M M  mmmm.  M 
 M         `M M.      `YM M'        .M M'        .M M  MMP  MMP  M M  MMMMM  M 
